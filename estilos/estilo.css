@@ -1,0 +1,576 @@
+
+
+body{
+    margin: 0;
+}
+header {
+    display: block;
+}
+.cabecera__nav{
+    width: 100%;
+    height: 10vh;
+    margin: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 5px;
+    background-color: #181414;
+}
+.cabecera__titulo{
+    letter-spacing: 10px;
+    color: white;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    transition: 0.1s;
+    font-weight: inherit;
+    font-style: oblique;
+}
+.cabecera__nav a {
+    text-decoration: none;
+    color: white;
+}
+.cabecera__titulo{
+    /* espacio entre las letras del arquic transicion
+          tipo de letra */
+    letter-spacing: 10px;
+    color: white;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    transition: 0.1s;
+    font-weight: inherit;
+    font-style: oblique;
+}
+.cabecera__titulo:hover {
+    /* color del arquic cuando se pasa por arriba */
+    color: rgb(7, 6, 6);
+    background-color: rgba(248, 248, 236, 0.911);
+    display: block;
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cabecera__nav ul {
+    /* tamaño de la barra de arriba */
+    margin: 0;
+    padding: 0;
+}
+.cabecera__nav ul li {
+    /* posicion del la barra */
+    display: inline-table;
+}
+.cabecera__nav ul li a {
+    /* configuraciones del Inicio, servicio, obras, etc */
+    display:block;
+    padding: 0.3rem 0.7rem;
+    transition: all 0.1s linear;
+    border-radius: 9px;
+    font-size: 17px;
+}
+.cabecera__nav ul li a:hover {
+    /* color de fondo del inicio,servicio,etc */
+    background-color: rgb(255, 255, 255);
+    color: #181414;
+}
+.iconos {
+    /* insta hace referencia a los iconos */
+    color: white;
+    transition: all 0.1s linear;
+    border-radius: 9px;
+    padding: 0.3rem 0.7rem;
+}
+.paginaPrincipal{
+    /* imagen del hero y dimensiones */
+    width: 100%;
+    height: 715px;
+    margin-right: 0%;
+    background-image: url("../imagen/imagen-tc-scaled-e1610632729734.jpg");
+    background-position: center;
+    background-size: 270vh;
+    background-repeat: no-repeat;
+    
+}
+.fondo__transparente {
+    /* Estilo de fondo transparente */
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 715px;
+    background-color: rgba(15, 15, 15, 0.562);
+    
+    color: white;
+}
+.contenedor {
+    /* en que posicion ponemos las frases respecto de la imagen */
+    padding-top: 200px;
+}
+.contenedor h3 {
+    /* se controla la letra, el margen y el tamaño de la letra */
+    font-style: italic;
+    font-size: 25px;
+    margin: 0%;
+    position: relative;
+    left: 100px;
+}
+.contenedor h1 {
+    /* controlamos la fuente, tamaño y margen */
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 5px;
+    left: 300px;
+    position: relative;
+    
+}
+.boton__hero {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: rgb(32, 28, 19);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    left: 350px;
+    top: 50px;
+    position: relative;
+
+}
+.boton__hero:hover {
+    color: rgb(8, 8, 8);
+    background-color: #ffebcd;
+}
+
+/*ACA EMPIEZA LA SECCION DE SERVICIOS*/
+.servicios{
+    width: 100%;
+    height: 950px;
+    background-image: url("../imagen/775909044908312087-La-experiencia-sensorial-en-la-arquitectura-60fe72f17804c.jpeg");
+    background-repeat: no-repeat;
+    background-size: 250vh;
+    color: black;
+    
+    margin: 0;
+}
+.fond__transparente {
+    background-color: rgba(46, 43, 43, 0.842);
+    height: 950px;
+}
+
+.servicios h3 {
+    padding-top: 20px;
+    margin-top: 0%;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    letter-spacing: 3px;
+}
+.decoracion{
+    padding-top: 0px;
+    margin: 0;
+    font-size: 30px;
+    left: 40px;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+.servicios p{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-align: center;
+}
+.contenedor__cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+    text-align: center;
+}
+
+.cardCocina{
+    width: 25%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.61);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0);
+    transition: all 0.1s;
+}
+.cardCocina:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.884);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 1.4s;
+}
+.cardCocina img{
+    width: 300px;
+    height: 215px;
+    margin-top: 25px;
+    border-radius: 20px;
+    
+}
+.cardBaños{
+    width: 25%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.144);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0);
+    transition: all 0.1s;
+}
+.cardBaños:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.884);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 1.4s;
+}
+.cardBaños img{
+    width: 300px;
+    margin-top: 25px;
+    border-radius: 20px;
+}
+.contenedor__cards__abajo {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+    text-align: center;
+}
+.cardSalon{
+    width: 25%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.144);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0);
+    transition: all 0.1s;
+}
+.cardSalon:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.884);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 1.4s;
+}
+.cardSalon img{
+    width: 300px;
+    height: 230px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.cardDeco{
+    width: 25%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.144);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0);
+    transition: all 0.1s;
+}
+.cardDeco:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.884);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 1.4s;
+}
+.cardDeco img{
+    width: 300px;
+    margin-top: 15px;
+    height: 230px;
+    border-radius: 20px;
+}
+/*ACA EMPIEZA LA SECCION DE OBRAS*/
+.obras{
+    width: 100%;
+    height: 1550px;
+    background-image: url("../imagen/ALFRED_ESSA\ \(1\).webp");
+    background-repeat: no-repeat;
+    background-size: 350vh;
+    color: black;
+    margin: 0;
+}
+.fon__transparente {
+    background-color: rgba(46, 43, 43, 0.842);
+    height: 1550px;
+}
+.obras h3{
+    font-size: 30px;
+    margin: 0;
+    position: relative;
+    left: 40px;
+    top: 30px;
+    color: rgb(255, 255, 255);
+}
+.obras h5{
+    color: rgb(255, 255, 255);
+    top: 20px;
+    left: 50px;
+    position: relative;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.contenedo__cards{
+    margin-top: 0;
+}
+
+.contenedo__cards img{
+    position: relative;
+    width: 600px;
+    height: 300px;
+    left: 100px;
+    top: 20px;
+    border-radius: 20px;
+    
+}
+.contenedo__cards h4{
+    font-size: 22px;
+    position: relative;
+    top: 15px;
+    margin: 0;
+    left: 100px;
+}
+.contenedo__cards h5{
+    font-size: 15px;
+    position: relative;
+    top: 15px;
+    margin: 0;
+    left: 100px;
+    
+}
+.contenedo__cards p{
+    position: relative;
+    font-size: 23px;
+    left: 50px;
+    margin-bottom: 30px;
+    top: 5px;
+    color: #ffebcd;
+    
+}
+/*ACA EMPIEZA LA SECCION DE CONTACTOS*/
+.contenedor__contact h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contenedor__contact iframe{
+    width: 1300px;
+    height: 300px;
+    left: 50px;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+.form__labe{
+    font-size: 20px;
+    position: relative;
+    left: 80px;
+    margin: 0;
+    top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form__label{
+    font-size: 20px;
+    position: relative;
+    left: 80px;
+    margin: 0;
+    top: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form__input{
+    position: relative;
+    left: 140px;
+    top: 80px;
+    
+}
+.form__inpu{
+    position: relative;
+    left: 140px;
+    top: 110px;
+    
+}
+.btn__submit{
+    position: relative;
+    left: 500px;
+    bottom: 120px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form__textarea{
+    position: relative;
+    left: 530px;
+    bottom: 40px;
+}
+.boton{
+    position: relative;
+    left: 700px;
+    bottom: 120px;
+    color: #181414;
+    background-color: rgb(205, 129, 235);
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.boton:hover{
+    background-color: rgb(47, 140, 216);
+    color: #ffebcd;
+    transition-duration: 1s;
+    box-shadow: 0 0 10px #0e0e0d, 0 0 40px #111110, 0 0 40px #0a0a0a;
+
+}
+/*ACA EMPIEZA LA SECCION DE PASO A PASO*/
+.paso{
+    background-image: url(../imagen/85994.webp);
+    height: 700px;
+}
+.fo__transparente{
+    background-color: #0a0a0a85;
+    height: 700px;
+}
+.fo__transparente h3{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    top: 10px;
+    position: relative;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.conte__cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+    text-align: center;
+}
+.conte__cards img{
+    position:relative;
+    left: 100px;
+    top: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.conte__cards img:hover{
+    transform: scale(1.1);
+    transition-duration: 1.5s;
+}
+
+.conte__cards h4{
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 105px;
+    top: 50px;
+    font-size: 20px;
+
+}
+.conte__cards h5{
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 100px;
+    top: 50px;
+    font-size: 15px;
+}
+.segundoPaso{
+    position: relative;
+    left: 160px;
+}
+.tercerPaso{
+    position: relative;
+    left: 300px;
+}
+/* Esto hace referencia al footer, donde estan algunas redes sociales de la marca, si se aprieta redes en la barra de nav, lo redicciona hasta aca, cada icono del footer tiene su direccion */
+
+footer{
+    margin: 0;
+    background-color: #201f1e;
+}
+footer .titulo{
+    color: rgb(233, 230, 227);
+    justify-content: center;
+    display: flex;
+    margin: 0 0 40px;
+    font-size: 30px;
+}
+footer .copy{
+    color: #ebe6e6;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+}
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 0;
+    color: white;
+
+}
+.redes i{
+    font-size: 30px;
+    padding: 0 20px 0 20px;
+    color: white;
+}
+/*  media es para cambiar los tamaños de las pantallas cuando usamos celular, tablet, note, etc */
+
+@media (min-width: 300px) and (max-width: 500px){
+    .cabecera__titulo{
+        letter-spacing: 5px;
+        color: white;
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        transition: 0.1s;
+        font-weight: inherit;
+        font-style: oblique;
+        left: 30px;
+        position: relative;
+    }
+    
+    .paginaPrincipal{
+    width: 100%;
+    height: 200px;
+    margin-right: 0%;
+    background-image: url("../imagen/imagen-tc-scaled-e1610632729734.jpg");
+    background-position: center;
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    }
+    .contenedor{
+        
+        padding: 0;
+    }
+    .contenedor h3 {
+        /* se controla la letra, el margen y el tamaño de la letra */
+        font-style: italic;
+        font-size: 10px;
+        margin: 0%;
+        position: relative;
+        left: 60px;
+        top: 14px;
+    }
+    .contenedor h1 {
+        /* controlamos la fuente, tamaño y margen */
+        font-weight: bold;
+        font-size: 15px;
+        margin-top:0;
+        left: 60px;
+        position: relative;
+        top: 20px;
+        
+    }
+    .boton__hero {
+        text-decoration: none;
+        font-size: 10px;
+        padding: 10px 15px;
+        border-radius: 10px;
+        background-color: rgb(32, 28, 19);
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: all 0.2s ease-in-out;
+        left: 60px;
+        top: 30px;
+        position: relative;
+    
+    }
+    .boton__hero:hover {
+        color: rgb(8, 8, 8);
+        background-color: #ffebcd;
+    }
+}
