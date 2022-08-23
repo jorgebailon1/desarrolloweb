@@ -534,7 +534,7 @@ footer .copy{
 }
 /*  media es para cambiar los tamaños de las pantallas cuando usamos celular, tablet, note, etc */
 
-@media (max-width: 390px){
+@media (min-width:390px)and(max-width: 500px){
     body{
         margin: 0;
         width: 100%;
