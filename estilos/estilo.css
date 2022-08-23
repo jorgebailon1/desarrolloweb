@@ -471,37 +471,33 @@ button {
     font-size: 20px;
 
 }
-.cards{
-    display: flex;
-    justify-content:space-around;
-}
-.conte__cards {
+.icon {
     display: flex;
     justify-content: space-around;
     margin: 25px;
-    text-align: center;
+    
 }
-.conte__cards img{
+.icon img{
     
     border-radius: 10px;
     cursor: pointer;
     transition: all 1s;
 }
 
-.conte__cards img:hover{
+.icon img:hover{
     transform: scale(1.1);
     transition-duration: 1.5s;
 }
 
-.conte__cards h4{
+.icon h4{
     color: rgb(255, 255, 255);
-    
     font-size: 20px;
-
+    text-align: center;
 }
-.conte__cards h5{
+.icon h5{
     color: rgb(255, 255, 255);
     font-size: 15px;
+    text-align: center;
 }
 
 /* Esto hace referencia al footer, donde estan algunas redes sociales de la marca, si se aprieta redes en la barra de nav, lo redicciona hasta aca, cada icono del footer tiene su direccion */
@@ -538,7 +534,7 @@ footer .copy{
 }
 /*  media es para cambiar los tamaños de las pantallas cuando usamos celular, tablet, note, etc */
 
-@media (min-width: 390px){
+@media (max-width: 390px){
     body{
         margin: 0;
         width: 100%;
@@ -591,10 +587,6 @@ footer .copy{
         /* tamaño de la barra de arriba */
         margin: 0;
         padding: 0;
-    }
-    .cabecera__nav ul li {
-        /* posicion del la barra */
-        
     }
     .cabecera__nav ul li a {
         /* configuraciones del Inicio, servicio, obras, etc */
