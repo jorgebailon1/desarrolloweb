@@ -106,20 +106,21 @@ header {
 }
 .contenedor h3 {
     /* se controla la letra, el margen y el tamaño de la letra */
-    font-style: italic;
-    font-size: 25px;
-    margin: 0%;
-    position: relative;
-    left: 100px;
+    padding-left: 120px;
+    font-size: 22px;
+    
 }
 .contenedor h1 {
     /* controlamos la fuente, tamaño y margen */
     font-weight: bold;
     font-size: 80px;
-    margin-top: 5px;
-    left: 300px;
-    position: relative;
+    padding-left: 270px;
     
+}
+.boton_he{
+    padding-top: 30px;
+    padding-left: 300px;
+    display: flex;
 }
 .boton__hero {
     text-decoration: none;
@@ -131,9 +132,8 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     transition: all 0.2s ease-in-out;
-    left: 350px;
-    top: 50px;
-    position: relative;
+    
+    
 
 }
 .boton__hero:hover {
@@ -170,14 +170,12 @@ header {
     padding-top: 0px;
     margin: 0;
     font-size: 30px;
-    left: 40px;
-    position: relative;
+    padding-left: 100px;
     color: rgb(255, 255, 255);
 }
 .servicios p{
     font-size: 20px;
     color: rgb(255, 255, 255);
-    position: relative;
     text-align: center;
 }
 .contenedor__cards {
@@ -188,7 +186,7 @@ header {
 }
 
 .cardCocina{
-    width: 25%;
+    width: 35%;
     height: 300px;
     background-color: rgba(255, 255, 255, 0.61);
     border-radius: 10px;
@@ -210,7 +208,7 @@ header {
     
 }
 .cardBaños{
-    width: 25%;
+    width: 35%;
     height: 300px;
     background-color: rgba(255, 255, 255, 0.144);
     border-radius: 10px;
@@ -236,7 +234,7 @@ header {
     text-align: center;
 }
 .cardSalon{
-    width: 25%;
+    width: 35%;
     height: 300px;
     background-color: rgba(255, 255, 255, 0.144);
     border-radius: 10px;
@@ -257,7 +255,7 @@ header {
     border-radius: 20px;
 }
 .cardDeco{
-    width: 25%;
+    width: 35%;
     height: 300px;
     background-color: rgba(255, 255, 255, 0.144);
     border-radius: 10px;
@@ -280,7 +278,7 @@ header {
 /*ACA EMPIEZA LA SECCION DE OBRAS*/
 .obras{
     width: 100%;
-    height: 1550px;
+    height: 1650px;
     background-image: url("../imagen/ALFRED_ESSA\ \(1\).webp");
     background-repeat: no-repeat;
     background-size: 350vh;
@@ -289,21 +287,20 @@ header {
 }
 .fon__transparente {
     background-color: rgba(46, 43, 43, 0.842);
-    height: 1550px;
+    height: 1650px;
 }
 .obras h3{
     font-size: 30px;
     margin: 0;
-    position: relative;
-    left: 40px;
-    top: 30px;
+    padding-left: 50px;
+    padding-top: 30px;
     color: rgb(255, 255, 255);
 }
 .obras h5{
     color: rgb(255, 255, 255);
-    top: 20px;
-    left: 50px;
-    position: relative;
+    padding-left: 70px;
+    padding-top: 15px;
+    margin: 0;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
@@ -312,125 +309,172 @@ header {
 }
 
 .contenedo__cards img{
-    position: relative;
+    padding-left: 50px;
     width: 600px;
     height: 300px;
-    left: 100px;
-    top: 20px;
     border-radius: 20px;
     
 }
-.contenedo__cards h4{
+
+.card h4{
     font-size: 22px;
-    position: relative;
-    top: 15px;
+    color: #947f45;
+    padding-left: 50px;
+    padding-top: 0px;
     margin: 0;
-    left: 100px;
-}
-.contenedo__cards h5{
-    font-size: 15px;
-    position: relative;
-    top: 15px;
-    margin: 0;
-    left: 100px;
     
 }
-.contenedo__cards p{
-    position: relative;
+.card h5{
+    font-size: 15px;
+    padding-top: 5px;
+    margin: 0;
+    padding-left: 50px;
+    
+}
+.card p{
+    padding-top: 0px;
     font-size: 23px;
-    left: 50px;
-    margin-bottom: 30px;
-    top: 5px;
+    padding-left: 50px;
     color: #ffebcd;
     
 }
 /*ACA EMPIEZA LA SECCION DE CONTACTOS*/
+.contacto{
+    display: flex;
+}
 .contenedor__contact h3{
     text-align: center;
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .contenedor__contact iframe{
-    width: 1300px;
+    width: 400px;
     height: 300px;
-    left: 50px;
-    position: relative;
+    padding-left: 50px;
     margin-bottom: 30px;
     border-radius: 20px;
 }
+.barra{
+    margin-top: 100px;
+}
 .form__labe{
     font-size: 20px;
-    position: relative;
-    left: 80px;
+    padding-left: 30px;
+    padding-top: 70px;
     margin: 0;
-    top: 70px;
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .form__label{
     font-size: 20px;
-    position: relative;
-    left: 80px;
+    padding-left: 30px;
+    padding-top: 70px;
     margin: 0;
-    top: 100px;
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .form__input{
-    position: relative;
-    left: 140px;
-    top: 80px;
+    padding-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 5px;
     
 }
 .form__inpu{
-    position: relative;
-    left: 140px;
-    top: 110px;
-    
+    padding-left: 0px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 5px;
 }
 .btn__submit{
-    position: relative;
-    left: 500px;
-    bottom: 120px;
+    padding-top: 90px;
     font-size: 20px;
+    margin-left: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .form__textarea{
-    position: relative;
-    left: 530px;
+    padding-left: 25px;
     bottom: 40px;
+    margin-top: 30px;
 }
-.boton{
-    position: relative;
-    left: 700px;
-    bottom: 120px;
-    color: #181414;
-    background-color: rgb(205, 129, 235);
-    border-radius: 5px;
-    cursor: pointer;
-    overflow: hidden;
-}
-.boton:hover{
-    background-color: rgb(47, 140, 216);
-    color: #ffebcd;
-    transition-duration: 1s;
-    box-shadow: 0 0 10px #0e0e0d, 0 0 40px #111110, 0 0 40px #0a0a0a;
 
-}
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    margin-left: 80px;
+   }
+   
+   button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+   }
+   
+   button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+   }
+   
+   button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+   }
+   
+   button:hover span {
+    transform: translateX(5em);
+   }
+   
+   button:active {
+    transform: scale(0.95);
+   }
+   
+   @keyframes fly-1 {
+    from {
+     transform: translateY(0.1em);
+    }
+   
+    to {
+     transform: translateY(-0.1em);
+    }
+   }
+   
+
 /*ACA EMPIEZA LA SECCION DE PASO A PASO*/
 .paso{
     background-image: url(../imagen/85994.webp);
     height: 700px;
+    display: flex;
+    width: 100%;
 }
 .fo__transparente{
     background-color: #0a0a0a85;
+    width: 100%;
     height: 700px;
 }
 .fo__transparente h3{
     color: rgb(255, 255, 255);
     text-align: center;
-    top: 10px;
-    position: relative;
     letter-spacing: 5px;
     font-size: 20px;
+
+}
+.cards{
+    display: flex;
+    justify-content:space-around;
 }
 .conte__cards {
     display: flex;
@@ -439,9 +483,7 @@ header {
     text-align: center;
 }
 .conte__cards img{
-    position:relative;
-    left: 100px;
-    top: 60px;
+    
     border-radius: 10px;
     cursor: pointer;
     transition: all 1s;
@@ -454,27 +496,15 @@ header {
 
 .conte__cards h4{
     color: rgb(255, 255, 255);
-    position: relative;
-    left: 105px;
-    top: 50px;
+    
     font-size: 20px;
 
 }
 .conte__cards h5{
     color: rgb(255, 255, 255);
-    position: relative;
-    left: 100px;
-    top: 50px;
     font-size: 15px;
 }
-.segundoPaso{
-    position: relative;
-    left: 160px;
-}
-.tercerPaso{
-    position: relative;
-    left: 300px;
-}
+
 /* Esto hace referencia al footer, donde estan algunas redes sociales de la marca, si se aprieta redes en la barra de nav, lo redicciona hasta aca, cada icono del footer tiene su direccion */
 
 footer{
