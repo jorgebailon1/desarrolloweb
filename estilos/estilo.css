@@ -102,25 +102,30 @@ header {
 }
 .contenedor {
     /* en que posicion ponemos las frases respecto de la imagen */
-    padding-top: 200px;
+        /* padding-top: 200px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+
 }
 .contenedor h3 {
     /* se controla la letra, el margen y el tamaño de la letra */
-    padding-left: 120px;
+ /* padding-left: 120px; */
     font-size: 22px;
-    
 }
 .contenedor h1 {
     /* controlamos la fuente, tamaño y margen */
     font-weight: bold;
     font-size: 80px;
-    padding-left: 270px;
-    
+    /* padding-left: 270px; */
 }
 .boton_he{
     padding-top: 30px;
-    padding-left: 300px;
-    display: flex;
+/* padding-left: 300px; */
+/* display: flex; */
 }
 .boton__hero {
     text-decoration: none;
@@ -277,8 +282,9 @@ header {
 }
 /*ACA EMPIEZA LA SECCION DE OBRAS*/
 .obras{
+    
     width: 100%;
-    height: 1650px;
+    height: 1550px;
     background-image: url("../imagen/ALFRED_ESSA\ \(1\).webp");
     background-repeat: no-repeat;
     background-size: 350vh;
@@ -287,18 +293,18 @@ header {
 }
 .fon__transparente {
     background-color: rgba(46, 43, 43, 0.842);
-    height: 1650px;
+    height: 1550px;
 }
 .obras h3{
     font-size: 30px;
     margin: 0;
-    padding-left: 50px;
+    text-align: center;
     padding-top: 30px;
     color: rgb(255, 255, 255);
 }
 .obras h5{
     color: rgb(255, 255, 255);
-    padding-left: 70px;
+    text-align: center;
     padding-top: 15px;
     margin: 0;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
@@ -306,6 +312,9 @@ header {
 
 .contenedo__cards{
     margin-top: 0;
+    display: grid;
+    grid-template-columns: 700px 700px;
+    grid-template-rows: 600px 600px;
 }
 
 .contenedo__cards img{
@@ -319,7 +328,7 @@ header {
 .card h4{
     font-size: 22px;
     color: #947f45;
-    padding-left: 50px;
+    text-align: center;
     padding-top: 0px;
     margin: 0;
     
@@ -456,7 +465,6 @@ button {
 .paso{
     background-image: url(../imagen/85994.webp);
     height: 700px;
-    display: flex;
     width: 100%;
 }
 .fo__transparente{
@@ -468,23 +476,22 @@ button {
     color: rgb(255, 255, 255);
     text-align: center;
     letter-spacing: 5px;
-    font-size: 20px;
-
+    font-size: 25px;
 }
 .icon {
-    display: flex;
-    justify-content: space-around;
-    margin: 25px;
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 600px;
     
 }
-.icon img{
-    
+.imguno img{
+    padding-left: 140px;
     border-radius: 10px;
     cursor: pointer;
     transition: all 1s;
 }
 
-.icon img:hover{
+.imguno img:hover{
     transform: scale(1.1);
     transition-duration: 1.5s;
 }
@@ -534,7 +541,7 @@ footer .copy{
 }
 /*  media es para cambiar los tamaños de las pantallas cuando usamos celular, tablet, note, etc */
 
-@media (min-width:390px)and(max-width: 500px){
+@media (min-width:390px) and (max-width: 500px){
     body{
         margin: 0;
         width: 100%;
