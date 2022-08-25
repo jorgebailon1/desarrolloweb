@@ -464,20 +464,45 @@ button{
 /*ACA EMPIEZA LA SECCION DE PASO A PASO*/
 .paso{
     background-image: url(../imagen/85994.webp);
-    height: 700px;
+    height: 900px;
     width: 100%;
+    background-position: center;
 }
 .fo__transparente{
     background-color: #0a0a0a85;
     width: 100%;
-    height: 700px;
+    height: 900px;
+    
 }
 .fo__transparente h3{
     color: rgb(255, 255, 255);
     text-align: center;
     letter-spacing: 5px;
     font-size: 25px;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.card-img-top{
+    width: 100%;
+    height: 300px;
+}
+.card-body h5{
+    font-size: 25px;
+}
+.card-body p{
+    color: #181414;
+    font-size: 20px;
+}
+.card{
+    cursor: pointer;
+    transition: all 1s;
+}
+.card:hover{
+    transform: scale(1.05);
+    transition-duration: 1.5s;
+}
+/*
 .icon {
     display: grid;
     grid-template-columns: 500px 500px 500px;
@@ -506,7 +531,7 @@ button{
     font-size: 15px;
     text-align: center;
 }
-
+*/
 /* Esto hace referencia al footer, donde estan algunas redes sociales de la marca, si se aprieta redes en la barra de nav, lo redicciona hasta aca, cada icono del footer tiene su direccion */
 
 footer{
@@ -826,6 +851,7 @@ footer .copy{
     font-size: 10px;
     
 }
+
 .obras{
     width: 100%;
     height: 1450px;
@@ -854,6 +880,8 @@ footer .copy{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-bottom: 20px;
 }
+
+/*
 .contenedo__cards{
     margin-top: 0;
 }
