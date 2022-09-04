@@ -1,88 +1,7 @@
-
-
-body{
-    margin: 0;
-}
-header {
-    display: block;
-}
-.cabecera__nav{
-    width: 100%;
-    height: 10vh;
-    margin: 0%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    letter-spacing: 5px;
-    background-color: #181414;
-}
-.cabecera__titulo{
-    letter-spacing: 10px;
-    color: white;
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    transition: 0.1s;
-    font-weight: inherit;
-    font-style: oblique;
-}
-.cabecera__nav a {
-    text-decoration: none;
-    color: white;
-}
-.cabecera__titulo{
-    /* espacio entre las letras del arquic transicion
-          tipo de letra */
-    letter-spacing: 10px;
-    color: white;
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    transition: 0.1s;
-    font-weight: inherit;
-    font-style: oblique;
-}
-.cabecera__titulo:hover {
-    /* color del arquic cuando se pasa por arriba */
-    color: rgb(7, 6, 6);
-    background-color: rgba(248, 248, 236, 0.911);
-    display: block;
-    padding: 0.3rem 0.7rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.cabecera__nav ul {
-    /* tamaño de la barra de arriba */
-    margin: 0;
-    padding: 0;
-}
-.cabecera__nav ul li {
-    /* posicion del la barra */
-    display: inline-table;
-}
-.cabecera__nav ul li a {
-    /* configuraciones del Inicio, servicio, obras, etc */
-    display:block;
-    padding: 0.3rem 0.7rem;
-    transition: all 0.1s linear;
-    border-radius: 9px;
-    font-size: 17px;
-}
-.cabecera__nav ul li a:hover {
-    /* color de fondo del inicio,servicio,etc */
-    background-color: rgb(255, 255, 255);
-    color: #181414;
-}
-.iconos {
-    /* insta hace referencia a los iconos */
-    color: white;
-    transition: all 0.1s linear;
-    border-radius: 9px;
-    padding: 0.3rem 0.7rem;
-}
 .paginaPrincipal{
     /* imagen del hero y dimensiones */
-    width: 100%;
-    height: 715px;
-    margin-right: 0%;
+    height: 735px;
+    margin-right: 0;
     background-image: url("../imagen/imagen-tc-scaled-e1610632729734.jpg");
     background-position: center;
     background-size: 270vh;
@@ -91,13 +10,10 @@ header {
 }
 .fondo__transparente {
     /* Estilo de fondo transparente */
-    
     top: 0;
     left: 0;
-    width: 100%;
-    height: 715px;
+    height: 735px;
     background-color: rgba(15, 15, 15, 0.562);
-    
     color: white;
 }
 .contenedor {
@@ -137,289 +53,129 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     transition: all 0.2s ease-in-out;
-    
-    
-
 }
 .boton__hero:hover {
     color: rgb(8, 8, 8);
     background-color: #ffebcd;
 }
-
-/*ACA EMPIEZA LA SECCION DE SERVICIOS*/
-.servicios{
-    width: 100%;
-    height: 950px;
-    background-image: url("../imagen/775909044908312087-La-experiencia-sensorial-en-la-arquitectura-60fe72f17804c.jpeg");
-    background-repeat: no-repeat;
-    background-size: 250vh;
-    color: black;
-    
-    margin: 0;
-}
-.fond__transparente {
-    background-color: rgba(46, 43, 43, 0.842);
-    height: 950px;
-}
-
-.servicios h3 {
-    padding-top: 20px;
-    margin-top: 0%;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
-    letter-spacing: 3px;
-}
-.decoracion{
-    padding-top: 0px;
-    margin: 0;
-    font-size: 30px;
-    padding-left: 100px;
-    color: rgb(255, 255, 255);
-}
-.servicios p{
-    font-size: 20px;
-    color: rgb(255, 255, 255);
+/*SERVICIOS*/
+.container h1{
     text-align: center;
 }
-.contenedor__cards {
-    display: flex;
-    justify-content: space-around;
-    margin: 25px;
+.container h4{
+    padding-left: 60px;
+}
+.container p{
     text-align: center;
 }
-
-.cardCocina{
-    width: 35%;
-    height: 300px;
-    background-color: rgba(255, 255, 255, 0.61);
-    border-radius: 10px;
-    color: rgba(255, 255, 255, 0);
-    transition: all 0.1s;
-}
-.cardCocina:hover {
-    color: black;
-    background-color: rgba(255, 255, 255, 0.884);
-    cursor: pointer;
-    transform: scale(1.1);
-    transition-duration: 1.4s;
-}
-.cardCocina img{
-    width: 300px;
-    height: 215px;
-    margin-top: 25px;
-    border-radius: 20px;
-    
-}
-.cardBaños{
-    width: 35%;
-    height: 300px;
-    background-color: rgba(255, 255, 255, 0.144);
-    border-radius: 10px;
-    color: rgba(255, 255, 255, 0);
-    transition: all 0.1s;
-}
-.cardBaños:hover {
-    color: black;
-    background-color: rgba(255, 255, 255, 0.884);
-    cursor: pointer;
-    transform: scale(1.1);
-    transition-duration: 1.4s;
-}
-.cardBaños img{
-    width: 300px;
-    margin-top: 25px;
-    border-radius: 20px;
-}
-.contenedor__cards__abajo {
-    display: flex;
-    justify-content: space-around;
-    margin: 25px;
-    text-align: center;
-}
-.cardSalon{
-    width: 35%;
-    height: 300px;
-    background-color: rgba(255, 255, 255, 0.144);
-    border-radius: 10px;
-    color: rgba(255, 255, 255, 0);
-    transition: all 0.1s;
-}
-.cardSalon:hover {
-    color: black;
-    background-color: rgba(255, 255, 255, 0.884);
-    cursor: pointer;
-    transform: scale(1.1);
-    transition-duration: 1.4s;
-}
-.cardSalon img{
-    width: 300px;
-    height: 230px;
-    margin-top: 10px;
-    border-radius: 20px;
-}
-.cardDeco{
-    width: 35%;
-    height: 300px;
-    background-color: rgba(255, 255, 255, 0.144);
-    border-radius: 10px;
-    color: rgba(255, 255, 255, 0);
-    transition: all 0.1s;
-}
-.cardDeco:hover {
-    color: black;
-    background-color: rgba(255, 255, 255, 0.884);
-    cursor: pointer;
-    transform: scale(1.1);
-    transition-duration: 1.4s;
-}
-.cardDeco img{
-    width: 300px;
-    margin-top: 15px;
-    height: 230px;
-    border-radius: 20px;
-}
-/*ACA EMPIEZA LA SECCION DE OBRAS*/
-.obras{
-    
-    width: 100%;
-    height: 1750px;
-    background-image: url("../imagen/ALFRED_ESSA\ \(1\).webp");
-    background-repeat: no-repeat;
-    background-size: 350vh;
-    color: black;
-    margin: 0;
-}
-.fon__transparente {
-    background-color: rgba(46, 43, 43, 0.842);
-    height: 1750px;
-}
-.obras h3{
-    font-size: 30px;
-    margin: 0;
-    text-align: center;
-    padding-top: 30px;
-    color: rgb(255, 255, 255);
-}
-.obras h5{
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding-top: 15px;
-    margin: 0;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-.contenedo__cards{
-    
+.contenedor__cards{
     display: grid;
-    grid-template-columns: 700px 700px;
-    grid-template-rows: 700px 600px;
-}
-
-.contenedo__cards img{
-    padding-left: 50px;
-    width: 600px;
-    height: 300px;
-    border-radius: 20px;
-    
-}
-.madero{
-    margin: 30px;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 400px;
+    justify-content: space-between;
 }
 .card{
-    margin: 30px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.card:hover {
+    color: rgb(253, 251, 251);
+    background-color: rgba(7, 7, 7, 0.884);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 1.4s;
 }
 .card h4{
-    font-size: 22px;
-    color: #947f45;
     text-align: center;
-    padding-top: 0px;
-    margin: 0;
-    
+    padding: 0;
 }
-.card h5{
-    font-size: 15px;
-    padding-top: 5px;
-    margin: 0;
-    padding-left: 50px;
-    
+.card img{
+    width: 100%;
+    height: 300px;
 }
-.card p{
-    padding-top: 0px;
-    font-size: 23px;
-    padding-left: 50px;
-    color: #050505;
-    
+.contenedor__cards__abajo{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 400px;
+    justify-content: space-between;
 }
-/*ACA EMPIEZA LA SECCION DE CONTACTOS*/
-.contacto{
+/*OBRAS*/
+
+
+.contenedo__cards{
+    display: grid;
+    grid-template-columns: 325px 325px 325px;
+    grid-template-rows: 500px;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.madero{
+    background-color: rgb(255, 210, 143);
+    cursor: pointer;
+    border-radius: 30px;
+}
+.madero:hover {
+    cursor: pointer;
+    background-color: #663f05;
+    color: white;
+    transition-duration: 1.4s;
+}
+.madero img{
+    width: 100%;
+    height: 300px;
+}
+.madero h4{
+    padding: 0;
+    text-align: center;
+}
+.madero h5{
+    padding: 0;
+    text-align: center;
+}
+.madero p{
+    padding: 0;
+    text-align: center;
+}
+
+/*CONTACTOS*/
+.conteneCon{
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 600px;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.formulario{
     display: flex;
-    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../imagen/Edificios.webp);
+    background-position: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
-.contenedor__contact h3{
-    text-align: center;
-    font-size: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    display: grid;
-    grid-template-columns: 500px auto;
-    grid-template-rows: 60px auto;
-    margin: 0;
-    
+.nombre{
+    margin: 10px;
 }
-.contenedor__contact iframe{
-    width: 600px;
-    height: 340px;
-    padding-left: 30px;
-    
-    border-radius: 20px;
+.mail{
+    margin: 10px;
 }
-.barra{
-    margin-top: 100px;
-    text-align: center;
-    display: grid;
-}
-.form__labe{
-    font-size: 20px;
-    
-    
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.mensaje{
+    margin: 10px;
 }
 .form__label{
     font-size: 20px;
-    
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.form__input{
-    font-size: 20px;
-    margin-left: 20px;
-    margin-left: 300px;
-    margin-right: 10px;
-}
-.form__inpu{
-    padding-left: 0px;
-    padding-bottom: 0px;
-    margin-left: 300px;
-    margin-right: 10px;
 }
 .btn__submit{
-    
     font-size: 20px;
-    
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.form__textarea{
-    margin-left: 300px;
-    margin-right: 10px;
-    bottom: 40px;
-    
-}
-
 button{
     font-family: inherit;
     font-size: 20px;
-    background: royalblue;
-    color: white;
+    background: rgb(124, 72, 4);
+    color: rgb(248, 236, 236);
     padding: 0.7em 1em;
     padding-left: 0.9em;
     display: flex;
@@ -432,111 +188,78 @@ button{
     margin-right: 280px;
     margin-top: 30px;
     margin-bottom: 20px;
-   }
-   button span {
+}
+button span {
     display: block;
     margin-left: 0.3em;
     transition: all 0.3s ease-in-out;
-   }
-   
-   button svg {
+}
+button svg {
     display: block;
     transform-origin: center center;
     transition: transform 0.3s ease-in-out;
-   }
-   
-   button:hover .svg-wrapper {
+}
+button:hover .svg-wrapper {
     animation: fly-1 0.6s ease-in-out infinite alternate;
-   }
-   
-   button:hover svg {
+}
+button:hover svg {
     transform: translateX(1.2em) rotate(45deg) scale(1.1);
-   }
-   
-   button:hover span {
+}
+button:hover span {
     transform: translateX(5em);
-   }
-   
-   button:active {
+}
+button:active {
     transform: scale(0.95);
-   }
-   
-   @keyframes fly-1 {
-    from {
-     transform: translateY(0.1em);
-    }
-   
-    to {
-     transform: translateY(-0.1em);
-    }
-   }
-   
+}
 
-/*ACA EMPIEZA LA SECCION DE PASO A PASO*/
-.paso{
-    background-image: url(../imagen/85994.webp);
-    height: 900px;
-    width: 100%;
-    background-position: center;
+@keyframes fly-1 {
+    from {
+    transform: translateY(0.1em);
 }
-.fo__transparente{
-    background-color: #0a0a0a85;
-    width: 100%;
-    height: 900px;
-    
+    to {
+    transform: translateY(-0.1em);
 }
-.fo__transparente h3{
-    color: rgb(255, 255, 255);
-    text-align: center;
-    letter-spacing: 5px;
-    font-size: 25px;
-    margin-bottom: 40px;
-    padding-top: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.icon {
+
+/*PASOAPASO*/
+.cards{
     display: grid;
-    grid-template-columns: 500px 500px 500px;
-    grid-template-rows: 600px;
-    
+    grid-template-columns: 340px 340px 340px;
+    grid-template-rows: 620px;    
+    justify-content: space-between;
+}
+.imguno{
+    background-color: antiquewhite;
+    margin-top: 20px;
 }
 .imguno img{
-    padding-left: 140px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 1s;
+    width: 100%;
+    border-radius: 60px;
 }
-
-.imguno img:hover{
-    transform: scale(1.1);
-    transition-duration: 1.5s;
-}
-
-.icon h4{
-    color: rgb(255, 255, 255);
-    font-size: 20px;
+.imguno h4{
+    padding: 0;
     text-align: center;
 }
-.icon h5{
-    color: rgb(255, 255, 255);
-    font-size: 15px;
+.imguno h5{
+    padding: 0;
     text-align: center;
+    font-size: 18px;
+    color: rgb(51, 51, 51);
 }
 
-/* Esto hace referencia al footer, donde estan algunas redes sociales de la marca, si se aprieta redes en la barra de nav, lo redicciona hasta aca, cada icono del footer tiene su direccion */
-
-footer{
-    margin: 0;
+/*FOOTER*/
+.footer{
+    margin-top: 30px;
     background-color: #201f1e;
 }
-footer .titulo{
+.conteiner h4{
     color: rgb(233, 230, 227);
     justify-content: center;
     display: flex;
-    margin: 0 0 40px;
+    margin: 0 0 20px;
     font-size: 30px;
 }
-footer .copy{
+.conteiner p{
     color: #ebe6e6;
     justify-content: center;
     display: flex;
@@ -546,14 +269,13 @@ footer .copy{
     display: flex;
     align-items: center;
     justify-content:center;
-    margin: 0;
-    color: white;
-
+    margin: 0 0 20px;
 }
-.redes i{
-    font-size: 30px;
-    padding: 0 20px 0 20px;
+.redes a{
     color: white;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 4px;
 }
 /*  media es para cambiar los tamaños de las pantallas cuando usamos celular, tablet, note, etc */
 
@@ -561,414 +283,175 @@ footer .copy{
     body{
         margin: 0;
         width: 100%;
+    }.navbar{
+        flex-direction: row-reverse;
     }
-   
-    .paginaPrincipal{
-        /* imagen del hero y dimensiones */
+    .navbar-light .navbar-toggler {
+        color: rgba(231, 225, 225, 0.945);
+        border-color: rgb(241, 233, 233);
+        margin: 0;
+    }
+    header{
         width: 100%;
-        height: 515px;
-        margin-right: 0%;
+    }
+    .paginaPrincipal{
+        /* imagen del hero y dimensiones */ 
+        height: 735px;
+        width: 100%;
+        margin-right: 0;
         background-image: url("../imagen/imagen-tc-scaled-e1610632729734.jpg");
         background-position: center;
-        background-size: 110vh;
+        background-size: 270vh;
         background-repeat: no-repeat;
-        
     }
     .fondo__transparente {
         /* Estilo de fondo transparente */
-        
         top: 0;
         left: 0;
-        width: 100%;
-        height: 515px;
-        background-color: rgba(15, 15, 15, 0.74);
-        
+        height: 735px;
+        background-color: rgba(15, 15, 15, 0.562);
         color: white;
     }
-    .contenedor {
-        /* en que posicion ponemos las frases respecto de la imagen */
-        padding-top: 10px;
-    }
-    .contenedor h3 {
-        /* se controla la letra, el margen y el tamaño de la letra */
-        text-align: center;
-        font-size: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
-        
-    }
-    .contenedor h1 {
-        /* controlamos la fuente, tamaño y margen */
-        font-weight: bold;
-        font-size: 50px;
-        text-align: center;
-        padding-top: 5px;
-        
-    }
-    .boton_he{
-        padding-top: 10px;
-        justify-content: center;
-        display: flex;
-    }
-    .boton__hero {
-        text-decoration: none;
-        font-size: 15px;
-        padding: 10px 15px;
-        border-radius: 10px;
-        background-color: rgb(32, 28, 19);
-        color: white;
-        text-transform: uppercase;
-        font-weight: bold;
-        transition: all 0.2s ease-in-out;
-        
-        
-    
-    }
-    .boton__hero:hover {
-        color: rgb(8, 8, 8);
-        background-color: #ffebcd;
-    }
-    /*ACA EMPIEZA LA SECCION DE SERVICIOS*/
-    .servicios{
-        width: 100%;
-        height: 1550px;
-        background-image: url("../imagen/775909044908312087-La-experiencia-sensorial-en-la-arquitectura-60fe72f17804c.jpeg");
-        background-repeat: no-repeat;
-        background-size: 250vh;
-        color: black;
-        
-        margin: 0;
-    }
-    .fond__transparente {
-        background-color: rgba(46, 43, 43, 0.842);
-        height: 1550px;
-    }
-    
-    .servicios h3 {
-        padding-top: 20px;
-        margin-top: 0%;
-        color: rgb(255, 255, 255);
-        font-size: 30px;
-        text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif; 
-        letter-spacing: 3px;
-    }
-    .decoracion{
-        padding-top: 0px;
-        padding-left: 0;
-        margin: 0;
-        font-size: 20px;
-        text-align: center;
-        color: rgb(255, 255, 255);
-    }
-    .servicios p{
-        font-size: 0px;
-    }
-    .contenedor__cards {
-        display: grid;
-        grid-template-columns: 390px;
-        grid-template-rows: 350px 350px;
-    }
-    
-    .cardCocina{
-        width: 300px;
-        height: 300px;
-        background-color: rgba(255, 255, 255, 0.144);
-        border-radius: 10px;
-        color: rgba(255, 255, 255, 0);
-        transition: all 0.1s;
-        margin-left: 50px;
-    }
-    .cardCocina:hover {
-        color: black;
-        background-color: rgba(255, 255, 255, 0.884);
-        cursor: pointer;
-        transform: scale(1.1);
-        transition-duration: 1.4s;
-    }
-    .cardCocina img{
-        width: 250px;
-        margin-top: 25px;
-        border-radius: 20px;
-    }
-    .cardCocina h4{
-        font-size: 15px;
-        padding-top: 20px;
-    }
-    .cardBaños{
-        width: 300px;
-        height: 250px;
-        background-color: rgba(255, 255, 255, 0.144);
-        border-radius: 10px;
-        color: rgba(255, 255, 255, 0);
-        transition: all 0.1s;
-        margin-left: 50px;
-    }
-    .cardBaños:hover {
-        color: black;
-        background-color: rgba(255, 255, 255, 0.884);
-        cursor: pointer;
-        transform: scale(1.1);
-        transition-duration: 1.4s;
-    }
-    .cardBaños img{
-        width: 250px;
-        margin-top: 25px;
-        border-radius: 20px;
-    }
-    .cardBaños h4{
-        font-size: 15px;
-        padding-top: 20px;
-    }
-    .contenedor__cards__abajo {
-        display: grid;
-        grid-template-columns: 390px;
-        grid-template-rows: 350px 350px;
-    }
-    .cardSalon{
-        width: 300px;
-        height: 300px;
-        background-color: rgba(255, 255, 255, 0.144);
-        border-radius: 10px;
-        color: rgba(255, 255, 255, 0);
-        transition: all 0.1s;
-        margin-left: 50px;
-    }
-    .cardSalon:hover {
-        color: black;
-        background-color: rgba(255, 255, 255, 0.884);
-        cursor: pointer;
-        transform: scale(1.1);
-        transition-duration: 1.4s;
-    }
-    .cardSalon img{
-        width: 250px;
-        margin-top: 25px;
-        border-radius: 20px;
-    }
-    .cardSalon h4{
-        font-size: 15px;
-        padding-top: 20px;
-    }
-    .cardDeco{
-        width: 300px;
-        height: 300px;
-        background-color: rgba(255, 255, 255, 0.144);
-        border-radius: 10px;
-        color: rgba(255, 255, 255, 0);
-        transition: all 0.1s;
-        margin-left: 50px;
-    }
-    .cardDeco:hover {
-        color: black;
-        background-color: rgba(255, 255, 255, 0.884);
-        cursor: pointer;
-        transform: scale(1.1);
-        transition-duration: 1.4s;
-    }
-    .cardDeco img{
-        width: 250px;
-        margin-top: 25px;
-        border-radius: 20px;
-    }
-    .cardDeco h4{
-        font-size: 15px;
-        padding-top: 20px;
-    }
-/*OBRAS*/
-.obras{
-    
-    width: 100%;
-    height: 1650px;
-    background-image: url("../imagen/ALFRED_ESSA\ \(1\).webp");
-    background-repeat: no-repeat;
-    background-size: 350vh;
-    color: black;
-    margin: 0;
-}
-.fon__transparente {
-    background-color: rgba(46, 43, 43, 0.842);
-    height: 1650px;
-}
-.obras h3{
-    font-size: 30px;
-    margin: 0;
+
+    /*SERVICIOS*/
+.container h1{
     text-align: center;
-    padding-top: 30px;
-    color: rgb(255, 255, 255);
 }
-.obras h5{
-    color: rgb(255, 255, 255);
+.container h4{
+    padding-left: 20px;
+}
+.container p{
+    font-size: 0;
     text-align: center;
-    padding-top: 15px;
-    margin: 0;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
-.contenedo__cards{
-    margin-top: 0;
+.contenedor__cards{
     display: grid;
-    grid-template-columns: 390px;
-    grid-template-rows: 500px 400px 550px;
+    grid-template-columns: 370px ;
+    grid-template-rows: 360px 360px;
 }
-.contenedo__cards img{
-    padding-left: 0px;
-    width: 350px;
-    height: 200px;
-    border-radius: 20px;
-    margin-bottom: 20px;
+.card{
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 30px;
 }
-.card h4{
-    font-size: 22px;
-    color: #947f45;
-    text-align: center;
-    padding-top: 0px;
-    margin: 0;
-    
+.card img{
+    width: 100%;
+    height: 300px;
 }
-.card h5{
-    font-size: 0px;
+.contenedor__cards__abajo{
+    display: grid;
+    grid-template-columns: 370px ;
+    grid-template-rows: 360px 360px;
 }
-.card p{
-    padding-top: 0px;
-    font-size: 15px;
-    padding-left: 0px;
-    color: #050505;
-    text-align: center;
+.card:hover {
+    color: rgb(253, 251, 251);
+    background-color: rgba(7, 7, 7, 0.884);
+    cursor: pointer;
+    transform: scale(1.01);
+    transition-duration: 1.4s;
+}
+/*OBRAS*/
+
+
+.contenedo__cards{
+    display: grid;
+    grid-template-columns: 370px;
+    grid-template-rows: 400px 400px 400px;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .madero{
-    margin-top: 20px;
-    width: 360px;
-    padding-left: 25px;
-}
-
-/*ACA EMPIEZA LA SECCION DE CONTACTOS*/
-.contacto{
-    display: grid;
-    height: 700px;
-    grid-template-columns: 380px;
-    grid-template-rows: 300px 380px;
-}
-.contenedor__contact h3{
-    font-size: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.contenedor__contact iframe{
-    width: 360px;
-    height: 200px;
-    padding-left: 20px;
     margin-bottom: 20px;
-    border-radius: 20px;
+    background-color: rgb(255, 210, 143);
+    cursor: pointer;
+    border-radius: 30px;
 }
-.barra{
-    margin-top: 0px;
+.madero h4{
+    padding: 0;
+    text-align: center;
+}
+.madero h5{
+    padding: 0;
+    text-align: center;
+}
+.madero p{
+    font-size: 0;
+    padding: 0;
+    text-align: center;
+}
+/*CONTACTOS*/
+.conteneCon{
     display: grid;
     grid-template-columns: 380px;
-    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 400px 400px;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
 }
-.form__labe{
-    font-size: 20px;
-    padding-left: 30px;
-    padding: 0px;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../imagen/Edificios.webp);
+    background-position: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.nombre{
+    margin: 10px;
+}
+.mail{
+    margin: 10px;
+}
+.mensaje{
+    margin: 10px;
 }
 .form__label{
     font-size: 20px;
-    padding-left: 30px;
-    padding: 0px;
-    margin: 0;
-    
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.form__input{
-    padding-left: 30px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 5px;
-    border-radius: 20px;
-}
-.form__inpu{
-    padding-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 5px;
-    border-radius: 20px;
 }
 .btn__submit{
-    padding-top: 0px;
     font-size: 20px;
-    margin-left: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.form__textarea{
-    padding-left: 30px;
-    border-radius: 20px;
-    margin: 0px;
-}
-button{
-    margin: 5px 130px;
-}
-/*ACA EMPIEZA LA SECCION DE PASO A PASO*/
-.paso{
-    background-image: url(../imagen/85994.webp);
-    height: 1600px;
-    width: 100%;
-    background-position: center;
-}
-.fo__transparente{
-    background-color: #0a0a0a85;
-    width: 100%;
-    height: 1600px;
-    
-}
-.fo__transparente h3{
-    color: rgb(255, 255, 255);
-    text-align: center;
-    letter-spacing: 5px;
-    font-size: 25px;
-    margin-bottom: 40px;
-    padding-top: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.icon {
+/*PASOAPASO*/
+.cards{
     display: grid;
-    grid-template-columns: 380px;
-    grid-template-rows: 460px 460px 460px;
+    grid-template-columns: 370px;
+    grid-template-rows: 430px 430px 430px;    
+    justify-content: space-between;
+}
+.imguno{
+    background-color: antiquewhite;
+    margin-top: 20px;
 }
 .imguno img{
-    padding-left: 70px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 1s;
+    width: 100%;
+    height: 300px;
+    border-radius: 60px;
 }
-.imguno img:hover{
-    transform: scale(1.03);
-    transition-duration: 1.7s;
-}
-.icon h4{
-    color: rgb(255, 255, 255);
-    font-size: 20px;
+.imguno h4{
+    padding: 0;
     text-align: center;
 }
-.icon h5{
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    text-align:center;
+.imguno h5{
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(51, 51, 51);
 }
-
 /*FOOTER*/
-footer{
-    margin: 0;
+.footer{
+    height: 300px;
+    margin-top: 30px;
     background-color: #201f1e;
 }
-footer .titulo{
+.conteiner h4{
     color: rgb(233, 230, 227);
     justify-content: center;
     display: flex;
-    margin: 0 0 40px;
-    font-size: 25px;
+    margin: 0 0 10px;
+    font-size: 20px;
 }
-footer .copy{
+.conteiner p{
     color: #ebe6e6;
     justify-content: center;
     display: flex;
@@ -978,13 +461,12 @@ footer .copy{
     display: flex;
     align-items: center;
     justify-content:center;
-    margin: 0;
-    color: white;
-
+    margin: 0 0 10px;
 }
-.redes i{
-    font-size: 30px;
-    padding: 0 20px 0 20px;
+.redes a{
     color: white;
+    padding: 5px;
+    font-size: 10px;
+    letter-spacing: 2px;
 }
 }
